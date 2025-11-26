@@ -26,7 +26,7 @@
     "plugin",
     "persistedstate"
   ],
-  "author": "cailiao(Eleg-i)",
+  "author": "Eleg-i",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Eleg-i/pinia-plugin-persistedstate.git"
@@ -44,7 +44,8 @@
     "prettier": "prettier -w --cache src",
     "lint": "eslint --fix --cache --ext .js,.ts,.vue,.mjs,cjs --max-warnings=0 src",
     "verify": "pnpm run type-check && pnpm run prettier && pnpm run lint",
-    "prepare": "husky install",
+    "husky": "husky .husky",
+    "prepare": "pnpm run husky",
     "prepublishOnly": "npm run build -s",
     "patch": "npm version patch",
     "minor": "npm version minor",
