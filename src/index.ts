@@ -2,6 +2,7 @@ import Locker from '@cailiao/locks'
 import type { PiniaPlugin, PiniaPluginContext, StateTree, Store } from 'pinia'
 import { watch, isRef } from 'vue'
 import type { Ref } from 'vue'
+import { get as getValueByPath } from '../node_modules/es-toolkit/dist/compat/object/get.mjs'
 import { merge } from '../node_modules/es-toolkit/dist/object/merge.mjs'
 import { encrypt, decrypt } from './modules/crypto'
 import { normalizeOptions } from './modules/normalize'
@@ -398,7 +399,7 @@ export function createPersistedState(
       innerPaths.forEach(path => {
         watch(
           () => {
-            const value = pick(state, [path])
+            const value = getValueByPath(state, path)
 
             if (isRef(value)) return value.value
             else return value
