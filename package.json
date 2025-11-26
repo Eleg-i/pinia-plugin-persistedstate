@@ -84,5 +84,9 @@
   "dependencies": {
     "@cailiao/locks": "^1.0.1",
     "es-toolkit": "^1.42.0"
+  },
+  "peerDependencies": {
+    "pinia": "~3.0.0",
+    "vue": "~3.0.0"
   }
 }
