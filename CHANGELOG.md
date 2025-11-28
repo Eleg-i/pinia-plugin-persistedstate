@@ -2,34 +2,14 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 # Changelog
 
-- [v1.0.0](#v100)
-- [v0.1.7](#v017)
-- [v0.1.4](#v014)
-- [v0.1.2](#v012)
-- [v0.1.1](#v011)
+- [v1.0.2](#v102)
 - [v0.1.0](#v010)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-### v1.0.0
+### v1.0.2
 
-使用 ts 重写
-
-### v0.1.7
-
-修复 types 未能识别的问题。
-
-### v0.1.4
-
-修改 Readme 文档，新增两个API，允许直接导入 watch 和 watchBox 方法，新增 types。
-
-### v0.1.2
-
-完善 Readme 文档
-
-### v0.1.1
-
-完善 package.json
+- 正式发布
 
 ### v0.1.0
 
